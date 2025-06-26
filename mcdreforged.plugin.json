@@ -1,0 +1,18 @@
+{
+    "id": "text_protocols",
+    "version": "0.0.1",
+    "name": "TextProtocols",
+    "description": {
+        "en_us": "Provide stable APIs to use text protocols of Minecraft JE mods.",
+        "zh_cn": "提供稳定的 API 以使用 Minecraft JE 模组的文本协议。"
+    },
+    "author": "Mooling0602",
+    "link": "https://github.com/Mooling0602/TextProtocols-MCDR",
+    "dependencies": {
+        "mcdreforged": ">=2.14.1"
+    },
+    "entrypoint": "text_protocols.mcdr.entry",
+    "resources": [
+        "lang"
+    ]
+}
