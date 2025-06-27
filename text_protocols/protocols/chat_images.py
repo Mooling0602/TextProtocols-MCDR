@@ -1,2 +1,0 @@
-class CICode:
-    raise NotImplementedError()
