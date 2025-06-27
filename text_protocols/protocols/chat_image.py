@@ -22,9 +22,7 @@ class CICode:
         self.logger = logger
         self._warning: Optional[str] = None
         match pre, suf:
-            case ",", _:
-                _type_check = False
-            case _, ",":
+            case pre, suf if pre == "," or suf == ",":
                 _type_check = False
             case pre, suf if (pre is None) != (suf is None):
                 self._warning = _warning
@@ -53,4 +51,6 @@ class CICode:
 
 if __name__ == "__main__":
     image: CICode = CICode("https://example.com/image.png")
-    print(image)
+    print("Correct example: " + str(image))
+    # print("Error example: ")
+    # print(CICode("https://example.com/image.png", pre=",", suf=","))
