@@ -50,7 +50,8 @@ class CICode:
 
 
 if __name__ == "__main__":
-    image: CICode = CICode("https://example.com/image.png")
+    url = input("Type the image url: ")
+    image: CICode = CICode(url)
     print("Correct example: " + str(image))
     # print("Error example: ")
-    # print(CICode("https://example.com/image.png", pre=",", suf=","))
+    # print(CICode(url, pre=",", suf=","))
